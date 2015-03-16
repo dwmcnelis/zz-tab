@@ -1,0 +1,46 @@
+// app/templates/styles/zz-tab.scss 
+
+// Defaults
+$zzTabBackgroundColor: $componentBackgroundColor !default;
+$zzTabColor: $componentDisabledColor !default;
+$zzTabActiveColor: $componentActiveColor !default;
+$zzTabHoverColor: $componentDisabledHoverColor !default;
+$zzTabHeight: 35px !default;
+$zzTabBorderColor: 3px !default;
+
+.zz-tab {
+	display: inline-block;
+	height: $zzTabHeight;
+	padding: 6px 4px 0px 4px;
+	margin: 0px 6px 0px 6px;
+	background-color: $zzTabBackgroundColor; 
+}
+
+.zz-tab.active {
+	background-color: $zzTabBackgroundColor; 
+	border-bottom: $zzTabBorderColor solid $zzTabActiveColor;
+}
+
+.zz-tab > a {
+	display: block;
+	color: $zzTabColor;
+	font-weight: bold;
+	height: 100%;
+	width: 100%;
+	text-decoration: none !important;
+}
+
+.zz-tab > a:hover {
+	color:$zzTabHoverColor;
+	font-weight: bold;
+}
+
+.zz-tab > a:active {
+	color: $zzTabActiveColor;
+	font-weight: bold;
+}
+
+.zz-tab.active > a {
+	color: $zzTabActiveColor;
+	font-weight: bold;
+}
